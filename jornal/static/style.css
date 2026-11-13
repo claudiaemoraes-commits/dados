@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #f4f0e8;
+
+    color: #292525;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*Cabeçalho*/
+
+.cabecalho {
+    text-align: center;
+
+    padding: 55px 20px 45px;
+
+    background-color: #f4f0e8;
+}
+
+.cabecalho h1 {
+    margin: 0;
+
+    color: #74151f;
+
+    font-size: 64px;
+
+    font-weight: bold;
+
+    letter-spacing: 7px;
+}
+
+
+.cabecalho p {
+    margin: 15px 0 0;
+
+    color: #5c5151;
+
+    font-size: 19px;
+
+    font-style: italic;
+}
+
+
+/*conteúdo*/
+
+main {
+    width: 88%;
+
+    max-width: 1150px;
+
+    margin: 0 auto 70px;
+}
+
+
+/* section */
+
+.outras {
+    margin-top: 20px;
+}
+
+
+.titulo-secao {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+.titulo-secao span {
+    color: #74151f;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+.titulo-secao div {
+    flex: 1;
+
+    height: 2px;
+
+    background-color: #74151f;
+}
+
+
+/* ==========================================
+   GRID
+========================================== */
+
+.grid-noticias {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card {
+    min-height: 330px;
+
+    padding: 30px;
+
+    background-color: #ffffff;
+
+    border-left: 4px solid #74151f;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: 0.2s;
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 9px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+.card h3 {
+    margin: 5px 0 15px;
+
+    color: #282323;
+
+    font-size: 25px;
+
+    line-height: 1.25;
+}
+
+
+.card .resumo {
+    color: #5c5555;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* ==========================================
+   LER MAIS
+========================================== */
+
+.ler-mais {
+    color: #74151f;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+
+    font-weight: bold;
+}
+
+
+.ler-mais:hover {
+    text-decoration: underline;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    background-color: #74151f;
+
+    padding: 45px 20px;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+.footer-conteudo h2 {
+    margin: 0;
+
+    font-size: 28px;
+
+    letter-spacing: 4px;
+}
+
+
+.footer-conteudo p {
+    margin: 10px 0 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   CELULAR
+========================================== */
+
+@media (max-width: 750px) {
+
+    .cabecalho h1 {
+        font-size: 40px;
+
+        letter-spacing: 4px;
+    }
+
+
+    .cabecalho p {
+        font-size: 16px;
+    }
+
+
+    main {
+        width: 92%;
+    }
+
+
+    .destaque {
+        padding: 30px;
+    }
+
+
+    .destaque h2 {
+        font-size: 30px;
+    }
+
+
+    .grid-noticias {
+        grid-template-columns: 1fr;
+    }
+
+
+    .card {
+        min-height: auto;
+    }
+
+}
